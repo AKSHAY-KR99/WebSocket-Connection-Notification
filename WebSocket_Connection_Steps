@@ -4,6 +4,8 @@ Steps for Channel notification
 1. Create a consumer file(consumers.py)
 2. Route the Consumer file with in asgi.py file by providing channel websocket url.(asgi.py)
 3. Create a function to send the notifications to corresponding page (utility.py)
+4. Add channels==3.0.4 and asgiref==3.4.1 in requirements.txt
+5. Add 'channels' in settings/INSTALLED_APPS
 
 
 Check the steps are fine or not
