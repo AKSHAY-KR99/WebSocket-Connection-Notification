@@ -1,3 +1,7 @@
+from channels.layers import get_channel_layer
+from asgiref.sync import async_to_sync
+
+
 # 0-2022/0001
 def push_notification(group, message_obj):
     channel_layer = get_channel_layer()
