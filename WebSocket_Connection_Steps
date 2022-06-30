@@ -6,6 +6,13 @@ Steps for Channel notification
 3. Create a function to send the notifications to corresponding page (utility.py)
 4. Add channels==3.0.4 and asgiref==3.4.1 in requirements.txt
 5. Add 'channels' in settings/INSTALLED_APPS
+6. Add the CHANNEL_LAYERS in settings.py
+        CHANNEL_LAYERS = {
+                          "default": {
+                          "BACKEND": "channels.layers.InMemoryChannelLayer"
+                                      }
+                          }
+
 
 
 Check the steps are fine or not
